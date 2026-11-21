@@ -1,44 +1,38 @@
 # FinalSoft · Portal de infraestructura telemática
 
+Portal estático (HTML, CSS y JavaScript) del proyecto *Sistemas y Servicios Telemáticos*:
+dos sedes, routers Debian, servicios corporativos y gateway con NAT y firewall, hechos en GNS3.
+
 ## Cómo abrir
+Haz doble clic en `index.html` (Chrome, Firefox o Edge). No necesita instalar nada ni conexión a Internet.
 
-1. Extrae el ZIP completo (no abras index.html dentro del ZIP).
-2. Haz doble clic en `index.html` en Chrome o Firefox.
-3. La portada no tiene desplazamiento vertical. Usa **Inicio** para abrir el menú desplegable o **Explorar**.
-4. Las páginas internas tienen navegación superior y desplazamiento vertical. El menú **Inicio** solo está en la portada.
+## Publicar en Apache (Debian)
+Copia `index.html`, `css/`, `js/`, `assets/` y `evidencias/` a `/var/www/html/`.
+No hace falta publicar `docs/`, `extras/` ni los archivos `.md`.
 
-## Secciones implementadas
+## Capturas
+Las imágenes viven en `evidencias/<servicio>/` y cada una se declara en `js/content.js` (campo `images` del capítulo).
+Para agregar una nueva: copia el PNG a su carpeta y añade `["carpeta/archivo.png", "descripción"]` al capítulo. Al hacer clic se amplía.
 
-- Inicio con video MP4 original, sin alterarlo.
-- Infraestructura: topología, sedes, direccionamiento.
-- Routers: R1 y R2, enlace punto a punto y DHCP Relay en R1.
-- Servicios: DHCP, DNS, WEB, CORREO y BACKUP.
-- Gateway R3: NAT, DNAT, firewall y acceso externo.
-- Pruebas y resultados: galería y descripción de las verificaciones.
+Capturas incluidas: topología (5), routers, DHCP (2), DNS, WEB, correo (5), backup e Internet/firewall.
+El sitio solo muestra las que existen; no hay espacios vacíos.
 
-Los textos, direcciones, comandos y pruebas se basan en `Proyecto_Final_Routers_Sedes (4).docx`. Algunos bloques de comandos son **extractos o resúmenes** y están marcados como tales. No ejecutes configuraciones de ejemplo sin revisar el documento completo y respaldar la configuración real.
-
-## Capturas reales
-
-Las capturas NO se inventaron. Para integrarlas, guarda los archivos exactamente con las rutas indicadas en cada espacio de evidencia. Ejemplos:
-
-- `evidencias/topologia/gns3-general.png`
-- `evidencias/routers/ping-enlace.png`
-- `evidencias/correo/correo-recibido.png`
-- `evidencias/correo/bloqueo-gmail.png`
-- `evidencias/internet/google-principal.png`
-- `evidencias/internet/google-secundaria.png`
-
-Al recargar la web, aparecerán automáticamente; haz clic para ampliarlas.
+## Navegación
+- Cada sección tiene un selector fijo de capítulos (`#servicios/dns`, `#routers/r2`...) y cada capítulo se organiza en pestañas: Resumen, Configuración, Pruebas y Evidencias.
+- Los comandos están plegados (se abren con un clic) y las imágenes se amplían en una ventana flotante con flechas.
+- Barra flotante inferior para ir a la sección anterior/siguiente.
 
 ## Archivos
+- `index.html`: estructura.
+- `css/styles.css`: apariencia.
+- `js/content.js`: contenido técnico (direcciones, comandos, pruebas, lista de capturas).
+- `js/app.js`: navegación, pestañas, selector de capítulos, galería con filtros y copiar código.
+- `assets/video/router-hero.mp4` y `assets/img/router-poster.jpg`: video de la portada.
+- `docs/Proyecto_Final_Routers_Sedes.docx`: documento fuente con las configuraciones completas.
 
-- `index.html` estructura principal.
-- `css/styles.css` apariencia.
-- `js/content.js` configuraciones documentadas.
-- `js/app.js` navegación, páginas, galería y copiar código.
-- `assets/video/router-hero.mp4` video que proporcionaste.
-
-No necesita instalación de Node.js, frameworks o CDN. Puede desplegarse como contenido estático en `/var/www/html` del Apache2 de FinalSoft. Para probar enlaces desde Webterm, verifica primero la resolución DNS y el acceso al servidor Apache.
-
-No hay sección de conclusiones ni de contacto.
+## Advertencias
+- Las pruebas son documentación histórica del laboratorio, no lectura en vivo.
+- Algunos bloques de comandos son extractos; la configuración completa está en el documento.
+- Dovecot sin TLS y SquirrelMail 1.4.22 son solo para laboratorio: no exponer a Internet pública.
+- No publiques contraseñas ni claves privadas.
+# a

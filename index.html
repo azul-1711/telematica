@@ -4,6 +4,7 @@
   <section class="landing" id="landing" aria-label="Portada FinalSoft">
     <div class="landing-art" aria-hidden="true"><video id="heroVideo" muted playsinline autoplay loop preload="metadata" poster="assets/img/router-poster.jpg"><source src="assets/video/router-hero.mp4" type="video/mp4"></video></div>
     <div class="landing-shade" aria-hidden="true"></div>
+    <button type="button" class="video-toggle" id="videoToggle" aria-pressed="false">❚❚ Pausar video</button>
     <header class="landing-top"><span class="wordmark">FinalSoft</span><span class="hairline"></span><span class="separator">&</span><span class="hairline"></span><span class="wordmark end">Telemática</span></header>
     <main class="landing-head"><span class="micro overline">PROYECTO FINAL / SISTEMAS Y SERVICIOS TELEMÁTICOS</span><h1>Infraestructura<br>Telemática<span class="period">.</span></h1></main>
     <div class="landing-bottom">
@@ -12,10 +13,11 @@
     </div>
   </section>
   <div class="interior" id="interior" hidden>
-    <header class="site-header"><a href="#inicio" data-page="inicio" class="site-logo">FinalSoft<span>.</span></a><nav class="top-links" aria-label="Secciones del portal"><a data-page="infraestructura" href="#infraestructura">Infraestructura</a><a data-page="routers" href="#routers">Routers</a><a data-page="servicios" href="#servicios">Servicios</a><a data-page="gateway" href="#gateway">Gateway</a><a data-page="pruebas" href="#pruebas">Evidencias</a></nav><button class="mobile-menu" id="mobileMenu" aria-expanded="false" aria-controls="mobileLinks" aria-label="Abrir menú">☰</button></header>
-    <nav id="mobileLinks" class="mobile-links" hidden aria-label="Secciones móviles"><a data-page="infraestructura" href="#infraestructura">Infraestructura</a><a data-page="routers" href="#routers">Routers</a><a data-page="servicios" href="#servicios">Servicios</a><a data-page="gateway" href="#gateway">Gateway</a><a data-page="pruebas" href="#pruebas">Evidencias</a><a data-page="inicio" href="#inicio">Inicio</a></nav>
+    <header class="site-header"><a href="#inicio" data-page="inicio" class="site-logo">FinalSoft<span>.</span></a><nav class="top-links" aria-label="Secciones del portal"><a data-page="inicio" href="#inicio">Inicio</a><a data-page="infraestructura" href="#infraestructura">Infraestructura</a><a data-page="routers" href="#routers">Routers</a><a data-page="servicios" href="#servicios">Servicios</a><a data-page="gateway" href="#gateway">Gateway</a><a data-page="pruebas" href="#pruebas">Pruebas</a></nav><button class="mobile-menu" id="mobileMenu" aria-expanded="false" aria-controls="mobileLinks" aria-label="Abrir menú">☰</button></header>
+    <nav id="mobileLinks" class="mobile-links" hidden aria-label="Secciones móviles"><a data-page="infraestructura" href="#infraestructura">Infraestructura</a><a data-page="routers" href="#routers">Routers</a><a data-page="servicios" href="#servicios">Servicios</a><a data-page="gateway" href="#gateway">Gateway</a><a data-page="pruebas" href="#pruebas">Pruebas</a><a data-page="inicio" href="#inicio">Inicio</a></nav>
     <div id="pageContent"></div>
+    <nav class="float-nav" aria-label="Navegación entre secciones"><a id="floatPrev" href="#inicio">‹ <span>Inicio</span></a><strong id="floatLabel"></strong><a id="floatNext" href="#routers"><span>Siguiente</span> ›</a><button type="button" id="floatTop" aria-label="Volver arriba">↑</button></nav>
     <footer class="site-footer"><strong>FinalSoft.</strong><span>Infraestructura implementada en GNS3 · Proyecto de Sistemas y Servicios Telemáticos</span><a data-page="inicio" href="#inicio">Volver al inicio ↑</a></footer>
   </div>
-  <div class="lightbox" id="lightbox" hidden role="dialog" aria-label="Ampliar evidencia" aria-modal="true"><button id="closeLightbox" aria-label="Cerrar imagen">×</button><img id="lightboxImage" alt=""><p id="lightboxCaption"></p></div>
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-label="Ampliar evidencia" aria-modal="true"><button id="closeLightbox" aria-label="Cerrar imagen">×</button><button id="lbPrev" class="lb-arrow prev" aria-label="Imagen anterior">‹</button><button id="lbNext" class="lb-arrow next" aria-label="Imagen siguiente">›</button><img id="lightboxImage" alt=""><p id="lightboxCaption"></p></div>
 </body></html>

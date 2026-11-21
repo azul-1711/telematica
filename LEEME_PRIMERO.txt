@@ -1,0 +1,5 @@
+Este zip contiene el portal FinalSoft con el diseño nuevo (portada con video y menu en pildora),
+tus capturas ya colocadas y el contenido tecnico corregido segun el documento del proyecto.
+
+Pasos: abre INSTRUCCIONES.md (seccion A) y sigue el orden. Solo se hace una vez.
+Despues usa la seccion B para trabajar con Claude Code.
