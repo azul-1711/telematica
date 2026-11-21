@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101114"><meta name="description" content="FinalSoft | Proyecto de infraestructura telemática: dos sedes, routers Debian, servicios corporativos y pruebas."><title>FinalSoft | Infraestructura Telemática</title><link rel="stylesheet" href="css/styles.css"><script src="js/content.js" defer></script><script src="js/app.js" defer></script></head>
+<body>
+  <section class="landing" id="landing" aria-label="Portada FinalSoft">
+    <div class="landing-art" aria-hidden="true"><video id="heroVideo" muted playsinline autoplay loop preload="metadata" poster="assets/img/router-poster.jpg"><source src="assets/video/router-hero.mp4" type="video/mp4"></video></div>
+    <div class="landing-shade" aria-hidden="true"></div>
+    <header class="landing-top"><span class="wordmark">FinalSoft</span><span class="hairline"></span><span class="separator">&</span><span class="hairline"></span><span class="wordmark end">Telemática</span></header>
+    <main class="landing-head"><span class="micro overline">PROYECTO FINAL / SISTEMAS Y SERVICIOS TELEMÁTICOS</span><h1>Infraestructura<br>Telemática<span class="period">.</span></h1></main>
+    <div class="landing-bottom">
+      <div class="landing-menu" id="landingMenu" hidden><p class="micro nav-caption">EXPLORAR PROYECTO</p><a href="#infraestructura" data-page="infraestructura"><span>01</span> Infraestructura <b>↗</b></a><a href="#routers" data-page="routers"><span>02</span> Enlace y routers <b>↗</b></a><a href="#servicios" data-page="servicios"><span>03</span> Servicios implementados <b>↗</b></a><a href="#gateway" data-page="gateway"><span>04</span> Gateway y seguridad <b>↗</b></a><a href="#pruebas" data-page="pruebas"><span>05</span> Pruebas y resultados <b>↗</b></a></div>
+      <nav class="landing-dock" aria-label="Navegación de portada"><span class="dock-logo">F<span>—</span></span><span class="dock-separator"></span><button id="landingToggle" type="button" aria-expanded="false" aria-controls="landingMenu">Inicio <span id="toggleMark">⌃</span></button><a class="explore" href="#infraestructura" data-page="infraestructura">Explorar <span>↗</span></a></nav>
+    </div>
+  </section>
+  <div class="interior" id="interior" hidden>
+    <header class="site-header"><a href="#inicio" data-page="inicio" class="site-logo">FinalSoft<span>.</span></a><nav class="top-links" aria-label="Secciones del portal"><a data-page="infraestructura" href="#infraestructura">Infraestructura</a><a data-page="routers" href="#routers">Routers</a><a data-page="servicios" href="#servicios">Servicios</a><a data-page="gateway" href="#gateway">Gateway</a><a data-page="pruebas" href="#pruebas">Evidencias</a></nav><button class="mobile-menu" id="mobileMenu" aria-expanded="false" aria-controls="mobileLinks" aria-label="Abrir menú">☰</button></header>
+    <nav id="mobileLinks" class="mobile-links" hidden aria-label="Secciones móviles"><a data-page="infraestructura" href="#infraestructura">Infraestructura</a><a data-page="routers" href="#routers">Routers</a><a data-page="servicios" href="#servicios">Servicios</a><a data-page="gateway" href="#gateway">Gateway</a><a data-page="pruebas" href="#pruebas">Evidencias</a><a data-page="inicio" href="#inicio">Inicio</a></nav>
+    <div id="pageContent"></div>
+    <footer class="site-footer"><strong>FinalSoft.</strong><span>Infraestructura implementada en GNS3 · Proyecto de Sistemas y Servicios Telemáticos</span><a data-page="inicio" href="#inicio">Volver al inicio ↑</a></footer>
+  </div>
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-label="Ampliar evidencia" aria-modal="true"><button id="closeLightbox" aria-label="Cerrar imagen">×</button><img id="lightboxImage" alt=""><p id="lightboxCaption"></p></div>
+</body></html>
