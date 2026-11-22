@@ -10,7 +10,7 @@ Debe seguir abriéndose con doble clic en `index.html`. Idioma de toda la interf
   Cada capítulo tiene: id, group, number, title, sub, ip, lead, reason, setup, blocks, tests, images, note.
 - `js/app.js`: genera las páginas (infraestructura, routers, servicios, gateway, pruebas), galería, lightbox, copiar código.
 - `evidencias/<servicio>/<archivo>.png`: capturas. Solo se listan en content.js las que existen.
-- `docs/Proyecto_Final_Routers_Sedes.docx`: fuente de verdad del contenido técnico.
+- `docs/Proyecto_Final_Routers_Sedes (4)(1).docx`: fuente de verdad del contenido técnico.
 - `extras/`: material que NO se publica.
 
 ## Diseño (no cambiar sin pedirlo)

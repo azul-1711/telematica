@@ -1,0 +1,22 @@
+FINALSOFT — ACTUALIZACIÓN DE DISEÑO (21-11-2026)
+
+Se conservan la estructura de páginas, los capítulos, los comandos documentados, los videos y las evidencias existentes.
+
+CAMBIOS
+- Nueva tipografía: Space Grotesk para títulos, DM Sans para texto, IBM Plex Mono para IP/comandos/etiquetas. Requieren Internet para cargar desde Google Fonts; si no hay conexión se usan fuentes alternativas.
+- Se mantiene la paleta negro/gris/verde lima, ahora con tablas verticales de direccionamiento y equipos.
+- Se ha reducido el alto de las portadas interiores y ajustado tarjetas, pestañas y espaciados.
+- La vista de Pruebas incluye 14 comprobaciones alineadas con la rúbrica y la experiencia práctica, con detalles de resultados.
+- Las imágenes ya existentes se utilizan sin alterarlas. Las evidencias no disponibles tienen espacio reservado y texto 'Imagen por agregar'.
+- Las pestañas de Pruebas dentro de cada router/servicio siguen visibles y ahora también muestran las capturas de dicho equipo.
+- La portada conserva su video, pero ya no muestra el control flotante de pausa/reproducción.
+- La navegación flotante dentro del portal sigue presente; el botón inicial 'Explorar' ahora dice 'Ver proyecto'.
+- Se actualizó texto del resultado del backup automático (16:44) y se restauró su programación documentada a 08:15.
+
+USO
+Abre index.html en un navegador moderno. También puedes ejecutar en la carpeta del proyecto: python -m http.server 8000 y abrir http://localhost:8000/
+Si quieres poner capturas faltantes, añádelas a evidencias/ y actualiza la matriz 'checks' en js/app.js (campo imagen).
+No hay modificaciones a los archivos de configuración en GNS3: se modificó exclusivamente la presentación web y su contenido descriptivo.
+
+CUIDADO
+Las capturas existentes no necesariamente demuestran cada una de las nuevas pruebas en la misma pantalla. Se indica cuando falta captura específica.

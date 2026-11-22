@@ -28,7 +28,7 @@ El sitio solo muestra las que existen; no hay espacios vacíos.
 - `js/content.js`: contenido técnico (direcciones, comandos, pruebas, lista de capturas).
 - `js/app.js`: navegación, pestañas, selector de capítulos, galería con filtros y copiar código.
 - `assets/video/router-hero.mp4` y `assets/img/router-poster.jpg`: video de la portada.
-- `docs/Proyecto_Final_Routers_Sedes.docx`: documento fuente con las configuraciones completas.
+- `docs/Proyecto_Final_Routers_Sedes (4)(1).docx`: documento fuente con las configuraciones completas.
 
 ## Advertencias
 - Las pruebas son documentación histórica del laboratorio, no lectura en vivo.

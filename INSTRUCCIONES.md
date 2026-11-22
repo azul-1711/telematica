@@ -32,7 +32,7 @@
    y aria-current en el menú. Sin cambiar el diseño."
 - Revisión final antes de entregar:
   "Revisa que todo funcione abriendo index.html sin servidor, que no haya enlaces rotos ni textos de relleno,
-   y que el contenido coincida con docs/Proyecto_Final_Routers_Sedes.docx."
+   y que el contenido coincida con docs/Proyecto_Final_Routers_Sedes (4)(1).docx."
 
 ## D) Dónde se cambia cada cosa
 - Textos técnicos, comandos y pruebas: js/content.js
